@@ -2,10 +2,20 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="container">
-      <Link href="/">Home</Link>
-      <Link href="/blog">Blog</Link>
-      <Link href="/about">About</Link>
+    <header className="header">
+      <div className="container">
+        <nav className="nav">
+          <Link className="nav__link" href="/">
+            Home
+          </Link>
+          <Link className="nav__link" href="/blog">
+            Blog
+          </Link>
+          <Link className="nav__link" href="/about">
+            About
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 };
